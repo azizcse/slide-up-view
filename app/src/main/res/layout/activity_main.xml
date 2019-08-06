@@ -44,8 +44,7 @@
             android:background="#ffffff"
             android:orientation="vertical"
             android:clickable="true"
-            android:visibility="gone"
-            android:focusable="false"
+            android:visibility="visible"
             android:id="@+id/dragView">
 
         <LinearLayout

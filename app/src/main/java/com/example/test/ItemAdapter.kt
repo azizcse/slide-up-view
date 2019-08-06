@@ -35,6 +35,11 @@ class ItemAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>{
         val item = itemList.get(position)
         val view = holder as ItemHolder
         view.name.text = item.name
+        view.name.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
+                listener.onItemClick(item)
+            }
+        })
 
     }
 
